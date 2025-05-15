@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar sua Primeira Automação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Criar sua Primeira Automação</h1>
+    </header>
+    <div class="container">
+        <p>Agora que você configurou o Twilio e o n8n, vamos criar sua primeira automação: enviar uma mensagem no WhatsApp automaticamente.</p>
+        <h2>Passo a Passo:</h2>
+        <ol>
+            <li><strong>Criar um Novo Fluxo no n8n:</strong>
+                <ul>
+                    <li>No n8n, clique em "Workflows" (Fluxos de Trabalho) e depois em "New Workflow" (Novo Fluxo).</li>
+                    <li>Dê um nome ao seu fluxo, por exemplo, "Enviar Mensagem WhatsApp".</li>
+                </ul>
+            </li>
+            <li><strong>Adicionar o Nó do Twilio:</strong>
+                <ul>
+                    <li>No painel de nós, procure por "Twilio" e arraste o nó para o fluxo.</li>
+                    <li>Configure o nó com as credenciais do Twilio que você criou anteriormente.</li>
+                </ul>
+            </li>
+            <li><strong>Configurar a Mensagem:</strong>
+                <ul>
+                    <li>No nó do Twilio, selecione a ação "Send Message" (Enviar Mensagem).</li>
+                    <li>Insira o número de WhatsApp de destino e a mensagem que deseja enviar.</li>
+                </ul>
+            </li>
+            <li><strong>Executar o Fluxo:</strong>
+                <ul>
+                    <li>Clique em "Execute Workflow" (Executar Fluxo) para testar a automação.</li>
+                    <li>Verifique se a mensagem foi enviada corretamente para o número de WhatsApp.</li>
+                </ul>
+            </li>
+        </ol>
+        <p><a href="../index.html">Voltar para a página inicial</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar WhatsApp com Twilio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Configurar WhatsApp com Twilio</h1>
+    </header>
+    <div class="container">
+        <p>Para criar automações que interagem com o WhatsApp, precisamos configurar o Twilio, um serviço que permite enviar e receber mensagens pelo WhatsApp.</p>
+        <h2>Passo a Passo:</h2>
+        <ol>
+            <li><strong>Criar uma Conta no Twilio:</strong>
+                <ul>
+                    <li>Acesse <a href="https://www.twilio.com" target="_blank">Twilio.com</a> e clique em "Sign Up" (Cadastrar).</li>
+                    <li>Preencha o formulário com seus dados e confirme seu e-mail.</li>
+                </ul>
+            </li>
+            <li><strong>Obter um Número de WhatsApp no Twilio:</strong>
+                <ul>
+                    <li>Após criar a conta, vá para a seção "Phone Numbers" (Números de Telefone).</li>
+                    <li>Clique em "Buy a Number" (Comprar um Número) e selecione um número que suporte WhatsApp.</li>
+                    <li>Siga as instruções para configurar o número.</li>
+                </ul>
+            </li>
+            <li><strong>Configurar o Twilio no n8n:</strong>
+                <ul>
+                    <li>No n8n, vá para a seção "Credentials" (Credenciais).</li>
+                    <li>Adicione uma nova credencial do tipo "Twilio".</li>
+                    <li>Insira o "Account SID" e o "Auth Token" da sua conta Twilio.</li>
+                </ul>
+            </li>
+            <li><strong>Testar a Conexão:</strong>
+                <ul>
+                    <li>Crie um fluxo simples no n8n para enviar uma mensagem de teste pelo WhatsApp.</li>
+                    <li>Verifique se a mensagem foi enviada corretamente.</li>
+                </ul>
+            </li>
+        </ol>
+        <p><a href="../index.html">Voltar para a página inicial</a></p>
+    </div>
+</body>
+</html>
